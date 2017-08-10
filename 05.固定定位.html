@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>固定定位
+		</title>
+		<style type="text/css">
+			.wrap{
+				height: 2000px;
+			}
+			.box{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				position: fixed;
+				top:50%;
+				right: 0;
+				/*
+				 * 固定定位
+				 * 基于浏览器窗体进行定位
+				 * 1.使元素完全脱离文档流
+				 * 2.使内联元素支持设置宽高
+				 * 3.使块属性标签的内容可以撑开宽高
+				 */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="box"></div>
+		</div>
+	</body>
+</html>
